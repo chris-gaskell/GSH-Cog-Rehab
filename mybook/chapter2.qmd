@@ -1,0 +1,8 @@
+# Introduction
+
+This is a book created from markdown and executable code.
+
+See @knuth84 for additional discussion of literate programming.
+
+Markdown\index{Markdown} allows you to write using
+an easy-to-read, easy-to-write plain text format.

@@ -1,0 +1,58 @@
+project:
+  type: book
+
+book:
+  title: "Cognitive Rehabilitation"
+  from: markdown+emoji
+  subtitle: "A guided self-help programme for improving thinking skills" 
+  author: "Dr Chris Gaskell"
+  cover-image: "brain.jpg"
+  date: "14/10/2022"
+  sharing: twitter
+  downloads: pdf
+  available-date: "14/10/2022"
+  contributor: "Leo"
+  navbar: 
+    title: "Cog Rehab"
+    pinned: false
+    search: true
+    logo: "brain.jpg"
+    background: white
+    foreground: blue
+  sidebar: 
+    style: docked
+      
+  chapters:
+    - index.qmd
+    - intro.qmd
+    - part: "Dice"
+    - chapter1.qmd
+    - chapter2.qmd
+    - chapter3.qmd
+    - chapter4.qmd
+    - references.qmd
+  page-footer:
+    center: 
+      - text: "An intervention developed by North Staffordshire NHS Foundation Trust"
+    background: white
+    foreground: blue
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: cosmo
+  pdf:
+    documentclass: scrreport
+    include-in-header: 
+      text: |
+        \usepackage{makeidx}
+        \makeindex
+    include-after-body: 
+      text: |
+        \printindex
+  epub:
+    cover-image: cover.png
+
+
+
